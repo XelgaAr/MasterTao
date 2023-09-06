@@ -94,18 +94,17 @@ button {
     color: #FFF;
     border-radius: 90px;
     padding: 21px 21px 20px 33px;
-    margin-bottom: 10px;
+
 }
 
 .button-description {
     color: #FFF;
     font-size: 16px;
     font-weight: 600;
-    padding: 2px 0px 0px;
     margin-bottom: 0px;
 }
 
-img,
+.button-description>img,
 .btn-1 {
     display: inline-block;
     margin-left: 49px;
@@ -116,11 +115,16 @@ img,
     margin-left: 95px;
 }
 
-.btn-2,
+.btn-2 {
+    padding: 14px 27px;
+    min-height: 50px;
+    min-width: 171px;
+}
 .btn-2-1 {
     padding: 14px 18px;
     min-height: 50px;
     min-width: 153px;
+  
 }
 
 .btn-2-1 {
@@ -256,7 +260,7 @@ ol {
     li {
         list-style: none;
 
-        &::before {
+        &:not([class]):before {
             content: counter(li, demical)".";
             counter-increment: li;
             color: $secondary-color;
@@ -271,7 +275,7 @@ ul {
     li {
         list-style: none;
 
-        &::before {
+        &:not([class]):before  {
             content: " ";
             background-color: $secondary-color;
             margin-right: 12px;
