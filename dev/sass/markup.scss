@@ -1,5 +1,5 @@
 body {
-    background-color: #2f3130;
+    background: $bg-primary-color;
     color: #fff;
     font-family: "ProximaNova";
     font-weight: 300;
@@ -7,7 +7,6 @@ body {
     *::selection {
         background: $secondary-color;
     }
-
 }
 
 
@@ -21,12 +20,10 @@ body {
     text-align: center;
     color: #fff;
     margin-bottom: 20px;
-
 }
 
 .var-1 {
     background-color: $bg-primary-color;
-
 }
 
 .var-2 {
@@ -66,12 +63,10 @@ main {
     display: inline-block;
     border-radius: 4px;
     border: 1px solid #282B38;
-
     background: url(assets/img/rectangle.svg) center no-repeat #fff;
 }
 
 .form-check-input[type=checkbox]:checked+label::before {
-
     background: url(assets/img/checked1.svg) center no-repeat #fff;
 }
 
@@ -87,14 +82,13 @@ main {
     margin-bottom: 14px;
 }
 
-.request-button{
+.request-button {
     min-height: 68px;
     background-color: #E58D35;
     ;
     color: #FFF;
     border-radius: 90px;
     padding: 21px 21px 20px 33px;
-
 }
 
 .button-description {
@@ -108,7 +102,6 @@ main {
 .btn-1 {
     display: inline-block;
     margin-left: 49px;
-
 }
 
 .btn-1 {
@@ -120,11 +113,11 @@ main {
     min-height: 50px;
     min-width: 171px;
 }
+
 .btn-2-1 {
     padding: 14px 18px;
     min-height: 50px;
     min-width: 153px;
-  
 }
 
 .btn-2-1 {
@@ -132,7 +125,6 @@ main {
     background: #363A4D;
     border-radius: 90px;
     border: 1px solid $primary-color;
-
 }
 
 .btn-2-2 {
@@ -152,27 +144,19 @@ p {
 
 
 .light {
-   
     font-weight: 300;
-
 }
 
 .regular {
-  
     font-weight: 400;
-
 }
 
 .semibold {
-
     font-weight: 600;
-
 }
 
 .bold {
-   
     font-weight: 700;
-
 }
 
 h1,
@@ -181,7 +165,6 @@ h3,
 h4,
 h5,
 h6 {
-
     color: #FFF;
     font-size: 56px;
     font-weight: 700;
@@ -224,7 +207,6 @@ h6 {
 .mycustom-scroll {
     max-height: 400px;
     overflow-y: scroll;
-
 }
 
 /* полоса прокрутки (скроллбар) */
@@ -241,7 +223,6 @@ h6 {
 
 .mycustom-scroll::-webkit-scrollbar-thumb:hover {
     background-color: $primary-color;
-    ;
 }
 
 .mycustom-scroll::-webkit-scrollbar-track {
@@ -275,7 +256,7 @@ ul {
     li {
         list-style: none;
 
-        &:not([class]):before  {
+        &:not([class]):before {
             content: " ";
             background-color: $secondary-color;
             margin-right: 12px;

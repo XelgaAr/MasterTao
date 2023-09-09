@@ -1,4 +1,6 @@
 header {
+    background: $bg-primary-color;
+
     .nav-link {
         color: #fff;
         line-height: 146%;
@@ -15,31 +17,28 @@ header {
     background-color: $secondary-color;
 }
 
-.navbar-toggler {
-    background-color: #596060;
-}
 
 .navbar {
     padding: 25px 0px 39px;
-.container{
-    padding: 0px;
-}
+
+    .container {
+        padding: 0px;
+    }
+
     &-nav {
-        
         max-width: 618px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         margin: 3px auto 0;
     }
-
 }
 
 .btn-2.request-button {
-   
+
     .button-description {
         font-size: 15px;
         line-height: 146%;
-       
+
     }
 }
