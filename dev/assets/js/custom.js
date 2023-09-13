@@ -3,6 +3,14 @@
     burger.classList.toggle('is-active');
   });
 
+   $(document).ready(function(){
+    $('.first-screen').slick({
+      infinite :true,
+      dots: true,
+      appendArrows: '.first-screen-nav'
+    });
+    $('.first-screen').append($('.first-screen-nav'));
+  })
 
   mobileOnlySlider("#advantages-slider", true, false, 992);
 
