@@ -1,73 +1,78 @@
-.first-screen{
+.first-screen {
     margin: 0 auto 97px;
     width: 100%;
     position: relative;
-   
-   
- 
+
+
+
     &_title {
         @extend h1;
         margin-bottom: 8px;
         max-width: 463px;
-        }
-        &_subtitle {
-            margin-bottom: 37px;
-            max-width: 345px;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 135.5%;
-        }
-        &_item {
-            min-height: 700px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
+    }
 
-            
-        }
-       
-       .container{ margin-top: 163px;
+    &_subtitle {
+        margin-bottom: 37px;
+        max-width: 345px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 135.5%;
+    }
+
+    &_item {
+        min-height: 700px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .container {
+        margin-top: 163px;
         margin-bottom: 228px;
         padding-left: 0px;
 
-       }
+    }
+}
+
+
+.first-screen-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 80px);
+    max-width: 1471px;
+    height: 0px;
+
+    .slick-arrow {
+        transform: translate(0, -73%);
+        background-image: url(assets/img/firstsc-1.svg);
+        z-index: 1;
+        width: 46px;
+        height: 46px;
+
+
+    }
+
+    .slick-arrow.slick-prev {
+        transform: rotate(180deg) translate(0, 36px);
     }
 
 
-    .first-screen-nav {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: space-between;
-        width: calc(100% - 80px);
-        max-width: 1471px;
-        height: 0px;
-     
-        .slick-arrow{
-            transform: translate(0, -73%);
-            background-image: url(assets/img/firstsc-1.svg);
-            z-index: 1;
-            width: 46px;
-            height: 46px;
-        
-        
-        }
-        .slick-arrow.slick-prev{
-    transform: rotate(180deg) translate(0, 36px);
-}
+    .slick-prev::before {
+        display: none;
 
+    }
 
-        .slick-prev::before{
-            display: none;
-
-}
-.slick-next::before{
-    content: "";
-   }
+    .slick-next::before {
+        content: "";
+    }
 }
