@@ -1,5 +1,6 @@
 @media screen and (max-width: 991px) {
 
+
     header {
         padding: 0 20px;
         .nav-link{
@@ -44,5 +45,132 @@
         transform: translate(0, 16px);
     }
 
+
+
+    main {
+        padding: 0 0 ;
    
+    .first-screen {
+      
+        max-width: 100%;
+
+        .slick-dots li {
+    
+            display: flex;
+            justify-content: center;
+        }
+        
+
+        .container{
+            padding: 0 20px;
+        margin: 50% 0;
+      
+         
+        }
+        &_item {
+            padding: 0 20px;
+           min-height:calc(100vh - 67px);
+           border-radius: 0;
+           margin: 0 auto;
+           padding: 0;
+           text-align: center;
+           background-position: center;
+
+           &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #04051110;
+            z-index: 1;
+
+            
+        }
+          .container{
+            z-index: 2;
+            position: relative;
+          }
+           }
+    
+    &_title {
+        font-size: 32px;
+        padding: 0 20px;
+        margin: 0 auto 10px;
+         
+    
+       
+        margin-bottom: 10px;
+    } 
+    &_subtitle{
+        
+    padding: 0 30px;
+        font-size: 16px;
+  
+        margin-bottom: 18px;
+    }
+
+    .request-button{
+        .button-description{
+       
+      > img {
+         
+            margin-left: 46px;
+    }
+  
+
+    }
+    }
+}
+ 
+}
+
+
+
+section {
+
+    .container-fluid {
+        padding: 54px 0 60px;
+        position: relative;
+        h1, .h1{
+            font-size: 32px; 
+          }
+          h2, .h2 {
+              font-size: 24px;
+            }
+          h5, .h5{
+              font-size: 18px;
+          }
+          
+
+        &::before {
+            content: "";
+            border-radius: 0;
+            left:0;
+            right: 0;
+            height: 479px;
+         
+        }
+        ul.slick-dots {
+    
+        bottom: 6px;
+        left: 52%;
+        }
+    
+    }
+  .template-title{
+    margin-bottom: 45px;
+  }
+  .advantage-title{
+    padding: 0 14px;
+    font-weight: 300;
+  }
+}
+#advantages-slider{
+    .slick-dots{
+        padding: 0;
+        margin: 15px 0;
+    }
+}
 }

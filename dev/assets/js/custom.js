@@ -7,7 +7,15 @@
       $('.first-screen').slick({
           infinite: true,
           dots: true,
-          appendArrows: '.first-screen-nav'
+          appendArrows: '.first-screen-nav',
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+            arrows: false,
+              }
+            }
+          ]
       });
       $('.first-screen').append($('.first-screen-nav'));
   })
