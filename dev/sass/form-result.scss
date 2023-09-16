@@ -1,0 +1,25 @@
+.template-title::after {
+    display: none;
+}
+
+form.form-result {
+    background: #363A4D;
+    border-radius: 20px;
+    max-width: 625px;
+    margin-top: 59px;
+    min-height: 597px;
+
+}
+
+.result {
+
+    background: url(assets/img/man.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding-bottom: 113px;
+
+    .template-title {
+        padding-bottom: 0;
+    }
+}

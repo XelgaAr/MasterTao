@@ -5,7 +5,32 @@ main {
 
 }
 
-.first-screen, section {
+.template-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 50px;
+
+    &.col-lg-7 {
+        margin-bottom: 35px;
+        text-align: left;
+
+        h2 {
+            &::after {
+                content: "";
+                position: static;
+                display: inline-block;
+                width: 85px;
+                height: 2px;
+                margin: 10px 10px 10px 19px;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+
+.first-screen,
+section {
     ul.slick-dots {
 
         padding: 0;
