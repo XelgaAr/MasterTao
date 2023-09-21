@@ -2,28 +2,56 @@
   burger.addEventListener('click', function() {
       burger.classList.toggle('is-active');
   });
-  document.getElementById('fileInput').onchange = function () {
-    
-
-// document.getElementById('file-name').innerHTML = this.files[0].name;
+  document.getElementById('fileInput').onchange = function() {
 
 
-    document.getElementById('file-name').innerHTML = this.value;
+      // document.getElementById('file-name').innerHTML = this.files[0].name;
+
+
+      document.getElementById('file-name').innerHTML = this.value;
   };
+
+
+  const checkButtons = document.querySelectorAll('.input-box.check')
+  console.log(checkButtons);
+
+  checkButtons.forEach(item => {
+      const colParent = item.closest('.col-lg-6');
+      colParent ? colParent.classList.add('padding-top') : null;
+
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   $(document).ready(function() {
       $('.first-screen').slick({
           infinite: true,
           dots: true,
           appendArrows: '.first-screen-nav',
-          responsive: [
-            {
+          responsive: [{
               breakpoint: 991,
               settings: {
-            arrows: false,
+                  arrows: false,
               }
-            }
-          ]
+          }]
       });
       $('.first-screen').append($('.first-screen-nav'));
   })

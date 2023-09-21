@@ -1,5 +1,5 @@
 .first-screen {
-    margin: 0 auto 97px;
+    margin: 0 auto 73px;
     width: 100%;
     position: relative;
 
@@ -76,4 +76,8 @@
     .slick-next::before {
         content: "";
     }
+
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 73px;
 }
