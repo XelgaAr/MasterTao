@@ -6,18 +6,23 @@ form.calculation-form {
     background: #363A4D;
     border-radius: 20px;
     max-width: 625px;
-    margin-top: 59px;
+    margin-top: 25px;
     min-height: 597px;
+    margin-left: -10px;
+    margin-bottom: 113px;
 
 }
 
 .calculation {
 
-    background: url(assets/img/man.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    padding-bottom: 113px;
+    .request-button {
+        min-height: 68px;
+        background-color: #E58D35;
+        color: #FFF;
+        border-radius: 90px;
+        padding: 23px 18px 20px 31px;
+    }
+
 
     .row {
         padding: 0 50px;
@@ -39,6 +44,11 @@ form.calculation-form {
 
     .input-box {
         padding: 0 0 20px;
+        margin-right: 3px;
+
+        .label-img{
+            margin-bottom: 5px;
+        }
     }
 
     input {
@@ -47,7 +57,8 @@ form.calculation-form {
 
         width: 100%;
         height: 56px;
-        padding: 19px 0 18px 20px;
+        padding: 20px 0 20px 19px;
+        font-size: 15px;
     }
 
     .form-check-input {
@@ -69,11 +80,18 @@ form.calculation-form {
         border-radius: 10px;
         border: 1px dashed #ffffff42;
         text-align: center;
-        padding: 11px 10px;
+        padding: 9px 10px;
         margin: 0;
 
 
     }
+    label {
+        
+        font-size: 15px;
+    font-weight: 600;}
+.title{ 
+    transform: translate( 0px, -3px );
+}
 
     .padding-top {
         padding-top: 19px;
@@ -88,3 +106,11 @@ form.calculation-form {
         margin-top: 47px;
     }
 }
+.calculation-row {
+    display: flex;
+    align-items: flex-start;
+    .calculation-decoration{
+        margin-left: -10px;
+        margin-bottom: -76px;
+    }
+ }
