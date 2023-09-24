@@ -136,8 +136,9 @@
     section {
 
         .container-fluid {
-            padding: 54px 0 60px;
+            padding: 56px 0 60px;
             position: relative;
+            margin-top: 16px;
 
             h1,
             .h1 {
@@ -147,6 +148,7 @@
             h2,
             .h2 {
                 font-size: 24px;
+
             }
 
             h5,
@@ -188,7 +190,77 @@
             margin: 15px 0;
         }
     }
-    .calculation-decoration{
-        display: none;
+
+    .first-screen.slick-slider.slick-dotted {
+        margin-bottom: 57px;
+    }
+
+
+
+
+
+    .calculation {
+        .container {
+
+            padding: 0;
+        }
+
+        .row {
+
+            padding: 0 29px;
+        }
+
+        .calculation-form {
+
+            margin: 45px 20px;
+            padding-top: 53px;
+
+            .padding-top {
+                padding-top: 10px;
+
+            }
+
+            #file-name {
+                margin-top: 4px;
+                margin-bottom: 10px;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            .request-button {
+
+                padding: 23px 38px 20px 35px;
+                margin-bottom: 11px;
+
+
+                .button-description>img,
+                .btn-1 {
+
+                    transform: translate(21px, 0px);
+                }
+            }
+        }
+
+        h2,
+        .h2 {
+            font-size: 24px;
+            text-align: center;
+
+        }
+
+        .calculation-decoration {
+            display: none;
+        }
+
+        .template-title.col-lg-7 h2::after {
+            position: absolute;
+            left: 50%;
+            bottom: -26px;
+            transform: translate(-50%, 0px);
+            margin: 0;
+
+
+        }
     }
 }

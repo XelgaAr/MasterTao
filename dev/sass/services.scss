@@ -1,0 +1,12 @@
+.services{
+
+
+h2::after{
+    background-color: $primary-color;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%, 0px);
+margin: 0;
+}
+}

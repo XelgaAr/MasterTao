@@ -15,7 +15,7 @@
         border-radius: 20px;
     }
 }
-.template-title{
+.advantages .template-title{
     text-align: center;
     position: relative;
     padding-bottom: 18px;
@@ -23,27 +23,28 @@
 
     h2 {
        
-      
+      margin-left: 10px;
         line-height: 124.5%;
         text-transform: uppercase;
         margin-bottom: 6px;
+
+        &::after{
+            background-color: $primary-color;
+            position: absolute;
+            left: 50%;
+            bottom: 15px;
+            transform: translate(-50%, 0px);
+            margin: 0;
+    
+        }
+    }
     }
     h3 {
         font-weight: 300;
         font-size: 24px;
         line-height: 1.25;
     }
-    &::after{
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: calc(100% - 2px);
-        transform: translate( -50%, 0);
-        width: 85px;
-        height: 2px;
-        background-color: $secondary-color;
-    }
-}
+   
 .advantage-row {
     margin-top: -24px;
     margin-bottom: -24px;
