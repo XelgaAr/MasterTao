@@ -1,12 +1,37 @@
-.services{
+.services {
 
 
-h2::after{
-    background-color: $primary-color;
-    position: absolute;
-    left: 50%;
-    bottom: 15px;
-    transform: translate(-50%, 0px);
-margin: 0;
+    h2::after {
+        background-color: $primary-color;
+        position: absolute;
+        left: 50%;
+        bottom: 15px;
+        transform: translate(-50%, 0px);
+        margin: 0;
+    }
 }
+
+button.slick-prev,
+button.slick-next {
+    display: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: "";
+    background-image: url(assets/img/ar.gray1.svg);
+    height: 45px;
+    width: 45px;
+    display: block;
+
+}
+
+.slick-next:before {
+
+    background-image: url(assets/img/ar.gray2.svg);
+    transform: translate(14px, 0);
+}
+
+.slick-prev:before {
+    transform: translate(-38px, 0);
 }

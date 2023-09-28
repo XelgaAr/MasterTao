@@ -1,13 +1,25 @@
-
-.delivery{
-
- h2 {
-    &::after {
-        background-color: $secondary-color;
-        position: absolute;
-        left: 50%;
-        bottom: 15px;
-        transform: translate(-50%, 0px);
-margin: 0;
+.delivery {
+    .container {
+        padding: 0;
     }
-}}
+
+    margin: 97px 0 95px 0;
+
+    .carousel-template {
+        .card-img-box {
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+        }
+    }
+
+    h2 {
+        &::after {
+            background-color: $secondary-color;
+            position: absolute;
+            left: 50%;
+            bottom: 15px;
+            transform: translate(-50%, 0px);
+            margin: 0;
+        }
+    }
+}

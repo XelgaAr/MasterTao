@@ -1,4 +1,5 @@
-  const burger = document.querySelector('#hamburger');
+
+ const burger = document.querySelector('#hamburger');
   burger.addEventListener('click', function() {
       burger.classList.toggle('is-active');
   });
@@ -80,4 +81,58 @@
               return slider.slick(settings);
           }
       });
-  } // Mobile Only Slider
+  } 
+
+  $('.carousel-template').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+
+
+  });
+
+
+
+// $('.carousel-template').each(function () {
+//     var slider = $(this);
+
+//     slider.slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+
+//     prevArrov: slider.closest('.container').find('.slick-prev'),
+//     nextArrow: slider.closest('.container').find('.slick-next'),
+//     });
+// });
+
+// $('.carousel-template').each(function () {
+//     var slider = $(this);
+
+//     slider.slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+
+//     prevArrov: '<img src="assets/img/ar.gray1.svg">',
+//     nextArrow:'<img src="assets/img/ar.gray2.svg">',
+//     });
+// });
+
+
+
+
+
+
+
+// $(document).ready(function() {
+//     $('.carousel-template').slick({
+//         infinite: true,
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         appendArrows: '.carousel-template-nav',
+        
+        
+//     });
+//     $('.carousel-template').append($('.carousel-template-nav'));
+// })
