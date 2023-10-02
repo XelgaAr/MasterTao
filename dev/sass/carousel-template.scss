@@ -38,7 +38,7 @@
     }
 
     &-price {
-        margin-bottom: 22px;
+        margin-bottom: 19px;
 
         span {
             &:first-child {
@@ -114,4 +114,32 @@
 
         }
     }
+    ul.slick-dots {
+        bottom: -39px;
+}
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+}
+.slick-prev{
+    left:-74px;
+    z-index: 1;
+    transform: translate(0, -50%) ;
+    top: 47%;
+}
+.slick-next{
+    right: -78px;
+    transform: rotate(180deg);
+ 
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: "";
+    background-image: url(assets/img/ar.gray1.svg);
+    height: 45px;
+    width: 45px;
+    display: block;}
 }

@@ -12,14 +12,15 @@
         }
     }
 
-    h2 {
+    h2 {margin-left: 9px;
         &::after {
             background-color: $secondary-color;
             position: absolute;
             left: 50%;
-            bottom: 15px;
+            bottom: 5px;
             transform: translate(-50%, 0px);
             margin: 0;
+
         }
     }
 }

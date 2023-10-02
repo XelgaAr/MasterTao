@@ -5,3 +5,16 @@
         padding: 0 92px 64px;
 }
 }
+@media screen and (max-width: 1346px) {
+    .carousel-template{
+        max-width: 778px;
+        margin: 0 auto;
+    }
+    .services {
+        .carousel-template { 
+            margin: 0 auto;
+}}}
+@media screen and (max-width: 926px) {
+    .carousel-template{
+    max-width: 390px;}
+}

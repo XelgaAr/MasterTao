@@ -87,7 +87,32 @@
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+        {
+          breakpoint: 1346,
+          settings: {
 
+            slidesToShow: 2,
+          }
+        },
+        {
+            breakpoint: 926,
+            settings: {
+  
+              slidesToShow: 1,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+  
+              slidesToShow: 1,
+              dots: true,
+              arrows: false,
+            }
+          },
+     
+    ]
 
   });
 

@@ -1,6 +1,6 @@
 .container-fluid{
   
-    padding: 90px 85px 100px;
+    padding: 90px 85px 69px;
     position: relative;
     
     &::before{
@@ -32,7 +32,7 @@
             background-color: $primary-color;
             position: absolute;
             left: 50%;
-            bottom: 15px;
+            bottom: 4px;
             transform: translate(-50%, 0px);
             margin: 0;
     

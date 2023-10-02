@@ -136,7 +136,7 @@
     section {
 
         .container-fluid {
-            padding: 56px 0 60px;
+            padding: 56px 0 14px;
             position: relative;
             margin-top: 16px;
 
@@ -263,5 +263,21 @@
 
 
         }
+ 
     }
+    .card .btn-row button {
+        width: 138px;
+        min-width: 138px;
+    }
+
+    .button-description {
+
+        font-size: 15px;
+        font-weight: 600;
+
+        line-height: 146%;
+    }
+
+
+
 }
